@@ -1,16 +1,26 @@
-# apae_website
+# 📌 apae_website
 
-Bem-vindo(a)! 👋
+## Sobre o projeto
+Este repositório contém um site estático (HTML/CSS/JS) usado para apresentar informações e serviços da APAE de São José dos Campos. O projeto mostra páginas institucionais, serviços, notícias, formulário de contato e uma página para doações.
 
-Este repositório contém o site estático da APAE de São José dos Campos (HTML/CSS/JS). Aqui estão instruções simples para rodar, testar e preparar para envio no GitHub. 🚀
+## Funcionalidades
+- Navegação responsiva (desktop e mobile).
+- Slideshow com controles e suporte a teclado (setas ←/→).
+- Acessibilidade: skip-link, landmarks semânticos (`header`, `nav`, `main`, `footer`), foco visível e announcer para leitores de tela.
+- Tema escuro e modo de alto contraste com persistência via localStorage.
+- Imagens com `loading="lazy"` e preparação para minificação/otimização.
 
-Principais pontos ✅
-- Acessibilidade básica implementada (skip-link, landmarks, foco visível, navegação por teclado e announcer para slideshow). ♿
-- Modo escuro e alto contraste — botões no cabeçalho para alternar (preferência salva). 🌙⚡
-- Scripts de build disponíveis (minificação + compressão) via `npm` (opcional). 🛠️
+## Estrutura do repositório
+- `index.html` — página inicial.
+- `about.html` — página institucional.
+- `contact.html`, `doar.html`, `files.html` — páginas auxiliares.
+- `style.css` — estilos principais.
+- `main.js` — scripts do site.
+- `assets/` — imagens e recursos.
+- `package.json` — scripts de build (opcional).
 
-Como testar localmente 🧭
-1. Abra `index.html` diretamente no navegador ou rode um servidor simples:
+## Como executar (local)
+1. Abra `index.html` direto no navegador ou rode um servidor simples no diretório do projeto:
 
 ```powershell
 python -m http.server 8000
@@ -18,39 +28,22 @@ python -m http.server 8000
 ```
 
 2. Testes rápidos:
-- Pressione Tab para ver o link “Pular para o conteúdo” e navegar pela barra. ⌨️
-- Use as setas ← e → para navegar o slideshow. ▶️◀️
-- Clique nos botões de modo escuro / alto contraste e recarregue para confirmar que a preferência foi salva. 💾
+- Verifique o link "Pular para o conteúdo" usando Tab.
+- Navegue o slideshow com as setas ← e →.
+- Alterne tema/alto contraste e recarregue para confirmar persistência.
 
-Build (opcional) 📦
-Se quiser gerar arquivos minificados (recomendado antes do deploy):
+## Build (opcional)
+Se quiser gerar versões otimizadas para deploy (requer Node.js):
 
 ```powershell
 npm install
 npm run build
 ```
 
-Isso executa minificação de CSS/JS/HTML e compressão de imagens (gera `dist/`).
+Os scripts em `package.json` tentam minificar CSS/JS/HTML e comprimir imagens para `dist/`.
 
-Git / Entrega no GitHub 🔁
-- Use um repositório público (exigido pela disciplina). 🌐
-- Recomendo GitFlow: `main` (produção), `develop`, `feature/*`, `release/*`, `hotfix/*`.
-- Mensagens de commit semânticas ajudam na leitura do histórico (ex.: `feat(a11y): add skip link`). ✍️
-- Crie uma Release com tag semântica (ex.: `v1.0.0`) e inclua um breve changelog.
+## Como contribuir
+- Abra uma branch `feature/*`, faça alterações e envie um pull request.
+- Use mensagens de commit claras (ex.: `feat(a11y): add skip link`).
 
-Checklist rápido de acessibilidade 📝
-- Skip link presente ✅
-- Landmarks (header/nav/main/footer) ✅
-- Teclado: navegação e slideshow por setas ✅
-- Foco visível (focus-visible) ✅
-- Announcer para leitores de tela (aria-live) ✅
-- Contraste: validar com Lighthouse/axe (recomendado) 🔍
-
-Próximos passos (posso ajudar) 🤝
-- Atualizar `contact.html`, `doar.html` e `files.html` com as mesmas melhorias. ✨
-- Criar workflow no GitHub Actions para build automático em releases. 🔧
-- Rodar auditoria automática (axe/Lighthouse) e ajustar contraste. 🧪
-
-Contato / ajuda
-- Se quiser que eu atualize as outras páginas ou rode o build e adicione `dist/`, me avise — eu faço pra você. 👍
 
