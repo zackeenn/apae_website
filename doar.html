@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Doações — APAE São José dos Campos</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* small page-specific tweaks */
+    .donate-hero { max-width:980px; margin:32px auto; padding:20px; background:linear-gradient(180deg, rgba(27,155,74,0.03), rgba(27,155,74,0.02)); border-radius:12px; }
+    .donate-methods { max-width:980px; margin:18px auto; padding:0 20px; display:grid; gap:12px; }
+    .donate-card { background:#fff; padding:16px; border-radius:10px; box-shadow:0 6px 20px rgba(8,23,32,0.04); }
+    .donate-cta { text-align:right; margin-top:8px; }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="brand">
+      <a href="index.html" class="logo-link"><img src="assets/apae_logo.png" alt="Logo APAE" class="logo"></a>
+      <h1>Associação de Pais e Amigos dos Excepcionais</h1>
+    </div>
+    <nav class="navbar">
+      <button type="button" class="nav-btn" onclick="location.href='index.html'">Início</button>
+      <button type="button" class="nav-btn" onclick="location.href='about.html'">Sobre Nós</button>
+      <a class="nav-btn" href="index.html#services">Serviços</a>
+      <button type="button" class="nav-btn" onclick="location.href='contact.html'">Contato</button>
+      <button type="button" class="nav-btn" onclick="location.href='files.html'">Arquivos</button>
+    </nav>
+    <div class="actions">
+      <form class="search" role="search"><input class="search-input" type="search" placeholder="Buscar..."></form>
+      <a class="btn-apoie" href="doar.html">Apoie</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="donate-hero">
+      <div style="max-width:980px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; gap:16px;">
+        <div>
+          <h2>Contribua com a APAE</h2>
+          <p>A sua doação ajuda a manter programas de educação, saúde e inclusão. Escolha a forma mais conveniente para você.</p>
+        </div>
+        <div>
+          <a class="btn-apoie large" href="doar.html">Doar agora</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="donate-methods">
+      <article class="donate-card">
+        <h3>PIX</h3>
+        <p>Chave PIX: <strong>00.000.000/0000-00</strong> (CNPJ da APAE)</p>
+        <p>Envie comprovante para <a href="mailto:apaesjcaminhos@apaesjcamil.org.br">apaesjcaminhos@apaesjcamil.org.br</a></p>
+      </article>
+
+      <article class="donate-card">
+        <h3>Transferência bancária</h3>
+        <p>Banco: XXX<br/>Agência: 0000<br/>Conta: 00000-0<br/>Titular: APAE São José dos Campos</p>
+      </article>
+
+      <article class="donate-card">
+        <h3>Doação recorrente / boleto</h3>
+        <p>Para configurar doações recorrentes ou solicitar boleto, entre em contato pelo e-mail ou telefone.</p>
+      </article>
+
+      <div class="donate-cta">
+        <a class="btn-apoie" href="contact.html">Preciso de ajuda para doar</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 APAE São José dos Campos.</p>
+  </footer>
+</body>
+</html>

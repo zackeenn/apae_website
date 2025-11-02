@@ -1,0 +1,21 @@
+{
+  "name": "apae-site",
+  "version": "1.0.0",
+  "description": "Site APAE - entrega final com acessibilidade e build para produção",
+  "scripts": {
+    "build:css": "csso style.css --output dist/style.min.css",
+    "build:js": "terser main.js -c -m -o dist/main.min.js",
+    "build:html": "html-minifier-terser --collapse-whitespace --remove-comments --minify-css true --minify-js true -o dist/index.html index.html && html-minifier-terser --collapse-whitespace --remove-comments --minify-css true --minify-js true -o dist/about.html about.html",
+    "build:images": "imagemin assets/* --out-dir=dist/assets",
+    "build": "npm run build:css && npm run build:js && npm run build:html && npm run build:images"
+  },
+  "devDependencies": {
+    "csso": "^6.0.0",
+    "terser": "^5.0.0",
+    "html-minifier-terser": "^6.0.0",
+    "imagemin": "^8.0.0",
+    "imagemin-cli": "^6.0.0",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-pngquant": "^9.0.0"
+  }
+}
